@@ -5,17 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet Shop</title>
   <link rel="stylesheet" href="path/to/bootstrap.css">
-    <style>
-        #pixi-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 600px;
-            margin-top: 20px;
-        }
-    </style>
-
-
+    
 
 </head>
 <body>
@@ -26,22 +16,28 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/6.5.8/pixi.min.js"></script>
 </head>
-<body>
-</head>
+
+   
 <body onload="hidePreloader()">
 
     <!-- Preloader -->
     <div id="preloader">
         <div id="status">&nbsp;</div>
     </div>
+
+    
+
     <!-- Video Background Section -->
     <section id="home" class="video-section">
-        <div class="video">
+        <div class="video-wrapper">
             <video autoplay muted loop id="bg-video">
                 <source src="animals.mp4" type="video/mp4">
             </video>
+
+
+
             <!-- Header -->
-        <header class="py-3" style="background-color: rgba(247, 241, 241, 0.5);">
+            <header class="py-3" style="background-color: rgba(247, 241, 241, 0.5);">
                 <div class="container d-flex justify-content-between align-items-center">
                     <img src="logo .png" alt="Pet Shop Logo" style="block-size: 50px;">
                     <nav class="nav mx-auto">
@@ -57,8 +53,12 @@
                     <nav class="nav">
                         <a class="nav-link" href="#" data-toggle="modal" data-target="#authModal" id="loginNav">Login</a>
                     </nav>
+                    </div>
                 </div>
             </header>
+
+
+    
             <div class="video-overlay">
                 <div class="container text-center">
                     <h2>Welcome to Pawkey Place PetShop</h2>
@@ -70,6 +70,3 @@
             </div>
         </div>
     </section>
-
-</body>
-</html>
