@@ -47,8 +47,15 @@
                         <a class="nav-link" href="#services">Services</a>
                         <a class="nav-link" href="#contact">Contact</a>
                     </nav>
+                    <div class="search-container">
+                        <input type="text" id="search-input" placeholder="Search for products...">
+                        <button onclick="searchProducts()">🔍 Search</button>
+                    </div>
+                    <div id="product-list">
+                    </div>
+                    <script src="script.js"></script>
                     <div class="nav">
-                        <button onclick="addToCart()">Add to Cart</button>
+                        <button onclick="addToCart()">🛒</button>
                     </div>
                     <nav class="nav">
                         <a class="nav-link" href="#" data-toggle="modal" data-target="#authModal" id="loginNav">Login</a>
