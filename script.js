@@ -168,4 +168,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+function openVideo() {
+    document.getElementById("videoContainer").style.display = "block";
+}
+
 
