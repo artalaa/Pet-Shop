@@ -415,4 +415,55 @@ body {
 }
 
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3ebeb;
+    margin: 0;
+    padding: 0;
+}
+
+.containerr {
+    width: 1200px;
+    margin: auto;
+    background: rgb(245, 237, 237);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(51, 46, 46, 0.1);
+    margin-top: 20px;
+    border-radius: 20px;
+    font-size: 15px
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+    
+
+}
+
+.review {
+    background: transparent;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.review h3 {
+    margin: 0 0 5px;
+}
+
+.review p {
+    margin: 120;
+}
+
+.stars {
+    color: gold;
+    margin-bottom: 5px;
+}
+
+.star {
+    font-size: 20px;
+}
+
 
