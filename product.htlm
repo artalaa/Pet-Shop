@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop</title>
+  <link rel="stylesheet" href="path/to/bootstrap.css">
+  <link rel="stylesheet" href="product.css">
+   
+
+
+
+</head>
+<body>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/6.5.8/pixi.min.js"></script>
+</head>
+<body>
+    
+</head>
+<body onload="hidePreloader()">
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
+
+</head>
+<body>
+   
+     <!-- Header -->
+     <header class="py-3" style="background-color: rgba(247, 241, 241, 0.5);">
+        <div class="container d-flex justify-content-between align-items-center">
+            <img src="logo.png" alt="Pet Shop Logo" style="block-size: 50px;">
+            <nav class="nav mx-auto">
+                <a class="nav-link" href="home.html">Home</a>
+                <a class="nav-link" href="product.html">Products</a>
+                <a class="nav-link" href="#about">About Us</a>
+                <a class="nav-link" href="#services">Services</a>
+                <a class="nav-link" href="#contact">Contact</a>
+            </nav>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search for products...">
+                <button onclick="searchProducts()">🔍 Search</button>
+            </div>
+            <div id="product-list">
+                <!-- Products will be displayed here -->
+            </div>
+            <script src="script.js"></script>
+            <div class="nav">
+                <button onclick="addToCart()">🛒Add to cart</button>
+            </div>
+            <nav class="nav">
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#authModal" id="loginNav">Login</a>
+            </nav>
+            </div>
+        </div>
+    </header>
+
+
+        
+        
+                <!--Produketet-->
+
+                <main>
+                    <div class="product-grid">
+                        <div class="product-item" data-id="1" data-name="Produkt1" data-price="10">
+                            <img src="product1.jpg" alt="Produkt 1">
+                            <h3>Whiskas</h3>
+                            <p>Whiskas understands the nutrition requirements of your cat. To help your cat get the best out of each meal, it has fish and delicious flavours that attract fussiest of eaters.</p>
+                            <p>Çmimi: €10</p>
+                            <button class="add-to-cart" data-product-id="1">Add to Cart</button>
+                        </div>
+                        <div class="product-item">
+                            <img src="product2.jpg" alt="Produkt 2">
+                            <h3>ROYAL CANIN</h3>
+                            <p>ROYAL CANIN® Kitten Instinctive in Gravy offers tailored nutrition for kittens, supporting growth, energy, and immunity. With a palatable formula, it's easy to chew and suitable for both kittens and mother cats.</p>
+                            <p>Çmimi: €20</p>
+                            <button class="add-to-cart" data-product-id="2">Add to Cart</button>
+                        </div>
+                        <div class="product-item">
+                            <img src="product3.jpg" alt="Produkt 3">
+                            <h3>Matisse</h3>
+                            <p>An Italian culinary tradition for your pet! Farmina brings together spelt, oats, and chicken provide your pet with a delicious source of protein. Pomegranate provides antioxidant properties to boost immunity. NOTE: The formulation matches nutritional levels approved by AAFCO Dog Food Nutrient Profiles for maintenance.</p>
+                            <p>Çmimi: €15</p>
+                            <button class="add-to-cart" data-product-id="3">Add to Cart</button>
+                        </div>
+                        <div class="product-item">
+                            <img src="product4.jpg" alt="Produkt 4">
+                            <h3>Trixie</h3>
+                            <p>This Trixie Scratch Me post is a fun toy to add to your cat's corner. It can stand on its own thanks to the wide base so you can have it anywhere in the house. In addition to a dangling ball it also has a mouse on a spring that will bounce back when swatted! The scratching post is covered in natural sisal.</p>
+                            <p>Çmimi: €25</p>
+                            <button class="add-to-cart" data-product-id="4">Add to Cart</button>
+                        </div>
+                        <div class="product-item">
+                            <img src="product5.jpg" alt="Produkt 5">
+                            <h3>Trixie</h3>
+                            <p>Trixie Junior Kitten Circle: Interactive toy stimulates natural instincts for play. Features ball track for chasing and hunting. Kittos Cat Treats: Pure, tasty, easily digestible treats with salmon. Packed with protein for cat's health.</p>
+                            <p>Çmimi: €12</p>
+                            <button class="add-to-cart" data-product-id="5">Add to Cart</button>
+                        </div>
+                        <div class="product-item">
+                            <img src="product6.jpg" alt="Produkt 6">
+                            <h3>Inaba</h3>
+                            <p>Inaba's Natural Hand-Cut Chicken Fillets are premium, human-grade treats made with farm-raised chicken, lightly grilled, and infused with succulent broth. With added Vitamin E and Green Tea Extract, these low-calorie, high-moisture fillets promote feline health. Vacuum-packed for freshness, they come in five flavors and are perfect for all stages of cats.</p>
+                            <p>Çmimi: €18</p>
+                            <button class="add-to-cart" data-product-id="6">Add to Cart</button>
+                        </div>
+                        <div class="product-item">
+                            <img src="product7.jpg" alt="Produkt 7">
+                            <h3>Catsan</h3>
+                            <p>Cats love cleanliness and freshness just like you do, and that’s why Catsan™ litter is the number one choice. With Catsan™ Hygiene Plus you care for your cat’s natural needs and provide them with a litter box that’s always clean and hygienic. It is the only cat litter that offers extra mineral protection for long-lasting odor retention, making it hygienically clean and popular with odour-sensitive cats. It absorbs before odour occurs giving cats a comfortable and safe space. The natural lime and fine quartz sand in this cat litter tray gives the quality granules their hygienically clean colour without any dangerous fibers or other incompatible substances.</p>
+                            <p>Çmimi: €75</p>
+                            <button class="add-to-cart" data-product-id="7">Add to Cart</button>
+                        </div>
+                        <div class="product-item">
+                            <img src="product8.jpg" alt="Produkt 8">
+                            <h3>Sushi treats</h3>
+                            <p>Bite-sized sushi-shaped treats, perfect for dogs sensitive to chicken or beef. Suitable for all sizes, ideal for training rewards or snacks. Enriched with nutrients like vitamins, minerals, glucosamine, and omega-3 for added health benefits</p>
+                            <p>Çmimi: €22</p>
+                            <button class="add-to-cart" data-product-id="8">Add to Cart</button>
+                        </div>
+                        <div class="product-item">
+                            <img src="product9.jpg" alt="Produkt 9">
+                            <h3>Gnawlers</h3>
+                            <p>Unleash a world of delight for your adult dog with our meticulously crafted treats. Tailored to offer both nourishment and joy, our treats are designed to enhance your dog's well-being in every way.</p>
+                            <p>Çmimi: €17</p>
+                            <button class="add-to-cart" data-product-id="9">Add to Cart</button>
+                        </div>
+                        <div class="product-item">
+                            <img src="product10.jpg" alt="Produkt 10">
+                            <h3>Petstages</h3>
+                            <p>Dog and puppy chew toys by Petstages provide a great outlet for dogs to satisfy their natural chewing urges. Replace splintering sticks, rawhide, and antlers with these safer and more durable alternatives.</p>
+                            <p>Çmimi: €19</p>
+                            <button class="add-to-cart" data-product-id="10">Add to Cart</button>
+                        </div>
+                        <div class="product-item">
+                            <img src="product11.jpg" alt="Produkt 11">
+                            <h3>Pedigree</h3>
+                            <p>Pedigree Professional Expert Nutrition Range of dog food fulfills the specialized needs of your dog. The range provides quality nutrients, combining high quality ingredients with the science developed by our veterinarians and nutritionists at WALTHAM- the world’s leading authority on pet care and nutrition.</p>
+                            <p>Çmimi: €20</p>
+                            <button class="add-to-cart" data-product-id="11">Add to Cart</button>
+                        </div>
+                        <div class="product-item">
+                            <img src="product12.jpg" alt="Produkt 12">
+                            <h3>Nylabone</h3>
+                            <p>These toys are a win-win for you and your pup, providing the best of both worlds - Mouthwatering flavours and Dental Stimulation!</p>
+                            <p>Çmimi: €13</p>
+                            <button class="add-to-cart" data-product-id="12">Add to Cart</button>
+                        </div>
+                        <div class="product-item">
+                            <img src="product13.jpg" alt="Produkt 13">
+                            <h3>Trixie</h3>
+                            <p>Do you worry about your fur baby eating too fast? Well, now you can put your worries away as the Trixie Anti-slip Slow Feed Dog Bowl 23 cm - 900 ml is here. This bowl has been made keeping in mind dogs that tend to eat too fast and gain weight.</p>
+                            <p>Çmimi: €16</p>
+                            <button class="add-to-cart" data-product-id="13">Add to Cart</button>
+                        </div>
+                        <div class="product-item">
+                            <img src="product14.jpg" alt="Produkt 14">
+                            <h3>Beboji Beds</h3>
+                            <p>The Beboji Navy Lounger Beds are available in a wide range of sizes and colors, making sure every dog enjoys its sleep.</p>
+                            <p>Çmimi: €28</p>
+                            <button class="add-to-cart" data-product-id="14">Add to Cart</button>
+                        </div>
+                        <div class="product-item">
+                            <img src="product15.jpg" alt="Produkt 15">
+                            <h3>Oxbow</h3>
+                            <p>Stabilized Vitamin C for your best friend! Natural Science Vitamin C contains high fiber Timothy hay and the stabilized vitamin C that guinea pigs need and other animals benefit from during times of stress, illness, or recovery. Offer Natural Science supplements to support the wellness of your small pets.</p>
+                            <p>Çmimi: €18</p>
+                            <button class="add-to-cart" data-product-id="15">Add to Cart</button>
+                        </div>
+                        <div class="product-item">
+                            <img src="product16.jpg" alt="Produkt 16">
+                            <h3>Oxbow Essentials</h3>
+                            <p>Essentials Young Guinea Pig is made with premium, purposeful ingredients to support healthy growth and development. We start with high fiber, protein-rich Oxbow Alfalfa hay for energy and healthy digestion and add balanced sources of protein and calcium to help support muscle and bone development. Essentials Young Guinea Pig provides your pet with daily recommended vitamins and minerals with no artificial preservatives, colors or flavors.</p>
+                            <p>Çmimi: €22</p>
+                            <button class="add-to-cart" data-product-id="16">Add to Cart</button>
+                        </div>
+                        <div class="product-item">
+                            <img src="product17.jpg" alt="Produkt 17">
+                            <h3>Smakers</h3>
+                            <p>Smakers® is a variety and supplement to the diet of rodents and rabbits. Rich in many vitamins, minerals and pectins, the source of which are ripe, best-quality vegetables such as beetroot, carrots and parsley. Carrots and beetroot are valuable sources of carotenoids. Parsley contains large amounts of vitamin C and A, B1, B2, P as well as potassium, calcium, magnesium, phosphorus and iron.</p>
+                            <p>Çmimi: €14</p>
+                            <button class="add-to-cart" data-product-id="17">Add to Cart</button>
+                        </div>
+                        <div class="product-item">
+                            <img src="product18.jpg" alt="Produkt 18">
+                            <h3>Vitapol</h3>
+                            <p>Consisting of premium quality, natural ingredients, Vitapols’ Fruit Smackers for Budgie is a perfect treat for your fine feathered friend. Ideally sized with a zesty fruity punch, your pet is sure to love and devour this yummy treat. Blended with high-quality berries known for its anti-oxidant properties, it also contains protein-enriched coconut. Not only are these treats nutritious, but they also help stimulate your bird's natural zest for activity and instinctive urge to forage for food, keeping its beak in perfect condition. After all, a healthy budgie is a happy budgie!</p>
+                            <p>Çmimi: €15</p>
+                            <button class="add-to-cart" data-product-id="18">Add to Cart</button>
+                        </div>
+                        <div class="product-item">
+                            <img src="product19.jpg" alt="Produkt 19">
+                            <h3>Vitapol Smakers</h3>
+                            <p>Consisting of premium quality, natural ingredients, Vitapols’ Fruit Smackers for Budgie is a perfect treat for your fine feathered friend. Ideally sized with a zesty fruity punch, your pet is sure to love and devour this yummy treat. Blended with high-quality berries known for its anti-oxidant properties, it also contains protein-enriched coconut. Not only are these treats nutritious, but they also help stimulate your bird's natural zest for activity and instinctive urge to forage for food, keeping its beak in perfect condition. After all, a healthy budgie is a happy budgie!</p>
+                            <p>Çmimi: €16</p>
+                            <button class="add-to-cart" data-product-id="19">Add to Cart</button>
+                        </div>
+                        <div class="product-item">
+                            <img src="product20.jpg" alt="Produkt 20">
+                            <h3>Vitaline</h3>
+                            <p>The range of complementary foods VITAPOL VITALINE consists of diet supplements and bird snacks based on wild seeds. Compositions rich in vitamins and minerals, recommended for daily application for prophylaxis. In that offer, you can find charcoals which bind toxins detrimental to health of birds, and algae which enrich the bird's diet with valuable iodine and minerals.</p>
+                            <p>Çmimi: €19</p>
+                            <button class="add-to-cart" data-product-id="20">Add to Cart</button>
+                        </div>
+                    </div>
+                </main>    
+
+                 <!--Login-->
+  <div class="modal fade auth-modal" id="authModal" tabindex="-1" role="dialog" aria-labelledby="authModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="authModalLabel">Account</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <ul class="nav nav-tabs" id="authTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="login-tab" data-toggle="tab" href="#login" role="tab" aria-controls="login" aria-selected="true">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="signup-tab" data-toggle="tab" href="#signup" role="tab" aria-controls="signup" aria-selected="false">Sign Up</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="authTabContent">
+                    <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                        <form id="loginForm">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="loginEmail" placeholder="Email address" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="loginPassword" placeholder="Password" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Login</button>
+                            <div class="forgot-password mt-2">
+                                <a href="#">Forgot Password?</a>
+                            </div>
+                            <div id="loginError" class="text-danger mt-2" style="display: none;">Invalid email or password.</div>
+                        </form>
+                        <div class="signup-message mt-3">
+                            Don't have an account? <a href="#" id="switchToSignUp">Sign Up</a>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="signup" role="tabpanel" aria-labelledby="signup-tab">
+                        <form id="signUpForm">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="signUpEmail" placeholder="Email address" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="signUpPassword" placeholder="Password" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="signUpConfirmPassword" placeholder="Confirm Password" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+                            <div id="signUpError" class="text-danger mt-2" style="display: none;">Passwords do not match.</div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="scripts.js"></script>
+</script>
+            
+            
+            <script src="product.js"></script>
+
+            <footer class="bg-dark text-white py-3">
+                <div class="container text-center">
+                    <p>&copy; 2024 Pet Shop. All rights reserved.</p>
+                    <audio controls>
+                        <source src="sound.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </footer>
+            
+        </body>
+        </html>
+        
+    
